@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista de Producto</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="productCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone15pro-digitalmat-gallery-1-202309?wid=728&hei=666&fmt=png-alpha&.v=1693346851364" class="d-block w-100" alt="iPhone">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone15pro-digitalmat-gallery-3-202309?wid=728&hei=666&fmt=png-alpha&.v=1693081542150" class="d-block w-100" alt="iPhone">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone15pro-digitalmat-gallery-5-202309?wid=728&hei=666&fmt=png-alpha&.v=1693081541860" class="d-block w-100" alt="iPhone">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>iPhone 15 Pro</h2>
+                <p class="text-muted">Apple iPhone 15 Pro (256 GB) - Titanio Natural</p>
+                <h4 class="text-primary">$999.99</h4>
+                <div class="product-details">
+                    <h5>Descripción Larga</h5>
+                    <p>Marca	Apple
+                        Sistema operativo	iOS
+                        Capacidad de almacenamiento de la memoria	256 GB
+                        Tamaño de la pantalla	6,1 Pulgadas
+                        Nombre del modelo	iPhone 15 Pro
+                        Operador inalámbrico	Todas las empresas de transportes
+                        Tecnología celular	5G
+                        Tecnología de conectividad	USB
+                        Color	Titanio natural
+                        Tipo de conector	USB tipo C
+                        </p>
+                </div>
+                <div class="button-container">
+                    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+                    <stripe-buy-button
+                      buy-button-id="buy_btn_1PekYkRxKVbjqFD4tjffdkYW"
+                      publishable-key="pk_test_51PdBptRxKVbjqFD4ED9ZuR15Ikv1HlkNNch3ICKmUrSeZRymRjY0ZwDHYdC42DPWzbTvtJHTMFVEDEkWncizs7QD006uvMdJUe"
+                    ></stripe-buy-button>
+                </div>
+            </div>
+        </div>
+        <div class="row comments">
+            <div class="col-md-12">
+                <h4>Comentarios de Usuarios</h4>
+                <div id="comments-section">
+                    <div class="comment">
+                        <p><strong>Bruce Wayne:</strong> ¡Excelente producto! Muy recomendado.</p>
+                    </div>
+                    <div class="comment">
+                        <p><strong>Tom Holland</strong> La batería dura mucho tiempo. Muy satisfecho.</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="new-comment">Añadir un comentario:</label>
+                    <textarea class="form-control" id="new-comment" rows="3"></textarea>
+                    <button class="btn btn-primary mt-2" onclick="addComment()">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
